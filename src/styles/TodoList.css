@@ -1,0 +1,93 @@
+.todo-list-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0 12%;
+}
+
+.todo-list-header{
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 25px;
+	font-weight: 800;
+	color: #392c1d
+}
+
+.todo-list {
+	max-height: 580px;
+	margin-top: 10px;
+	padding: 0 10px;
+	overflow-y: auto;
+	padding-right: 50px;
+}
+.todo-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.filter-button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	font-family: "Bad Script", cursive;
+	font-size: 18px;
+	color:#392c1d;
+}
+
+.filter-button:not(:last-of-type) {
+	margin-right: 20px;
+}
+
+.filter-button.active {
+	border-bottom: 1px solid #9a7d58;
+	font-weight: 700;
+}
+
+.remove-button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	font-family: "Bad Script", cursive;
+	font-size: 18px;
+	color:#392c1d;
+	opacity: 0.5;
+	transition: opacity 0,3s ease;
+}
+
+
+.remove-button:hover {
+	opacity: 1;
+	font-weight: 700;
+}
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+	gap: 20px;
+}
+
+.next, .back {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	background-size: cover; 
+}
+
+.next {
+
+	transform: rotate(180deg);
+	background-image: url('../images/next.svg');
+}
+
+.back {
+	background-image: url('../images/next.svg');
+}
+
+

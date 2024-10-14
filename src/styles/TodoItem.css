@@ -1,0 +1,42 @@
+.todo-item-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.custom-checkbox {
+    display: flex;
+    cursor: pointer;
+}
+
+.custom-checkbox input {
+    display: none; 
+}
+
+.checkmark {
+    width: 35px; 
+    height: 35px; 
+    background-image: url('../images/checked_not.svg'); 
+    background-size: cover; 
+    margin-right: 10px; 
+		transition: background-image 0.3s ease;
+}
+
+.custom-checkbox input:checked + .checkmark {
+    background-image: url('../images/checked.svg');
+}
+
+.custom-checkbox input:hover + .checkmark {
+  background-image: url('../images/checked.svg'); 
+}
+
+.checkmark:active {
+    transform: scale(0.95);
+}
+
+.todo-item-task {
+	font-size: 20px;
+	display: inline-block;
+	max-width: 100%;
+	overflow-wrap: break-word; 
+	white-space: normal; 
+}

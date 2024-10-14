@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+		"types": ["jest", "@testing-library/jest-dom"],
+    "target": "es5",
+		"lib": ["DOM", "ES2015"],
+    "module": "commonjs",  // или "ESNext"
+    "jsx": "react",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src"]
+}

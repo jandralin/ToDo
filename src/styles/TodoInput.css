@@ -1,0 +1,19 @@
+.create-todo-input {
+	border: none;
+	border-bottom: 2px solid #9a7d58;
+	padding: 0px 15px;
+	width: 400px;
+	font-size: 20px;
+	background-color: #f2f0ebc5;
+	font-family: "Bad Script", cursive;
+	color: #392c1d;
+	line-height: 20px;
+}
+
+.create-todo-input:focus {
+	outline: none;
+}
+
+.create-todo-input::placeholder {
+	color: #9a7d5894;
+}
